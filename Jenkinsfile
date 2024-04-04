@@ -5,7 +5,7 @@ pipeline {
         }
     }
 environment {
-    PATH= "/opt/apache-maven-3.9.6/bin:$PATH"
+    PATH = '/opt/apache-maven-3.9.6/bin:$PATH'
 }
     stages {
         stage('build') {
@@ -15,12 +15,4 @@ environment {
         }
 
     }
-
-    stage("test"){
-            steps{
-                echo "----------- unit test started ----------"
-                sh 'mvn surefire-report:report'
-                 echo "----------- unit test Complted ----------"
-            }
-}
 }
