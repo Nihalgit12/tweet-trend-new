@@ -4,7 +4,7 @@ metadata:
   name: nihal-rtp
   namespace: nihal
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app:  nihal-rtp
