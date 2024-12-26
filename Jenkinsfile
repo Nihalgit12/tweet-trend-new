@@ -5,7 +5,7 @@ pipeline {
         }
     }
 environment {
-    PATH = 
+    PATH = "/opt/apache-maven-3.9.9/bin/"
 }
     stages {
         stage ("Build") {
