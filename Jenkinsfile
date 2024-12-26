@@ -10,7 +10,7 @@ environment {
     stages {
         stage ("Build") {
             steps {
-                echo "------------Build Started-----------"
+                echo "------------Build Started in Dev-----------"
                 sh 'mvn clean deploy -Dmaven.test.skip=true'
                 echo "------------Build Ended-------------"
             }
